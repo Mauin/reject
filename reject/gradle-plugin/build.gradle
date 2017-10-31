@@ -1,0 +1,26 @@
+apply plugin: "java-gradle-plugin"
+apply plugin: "groovy"
+
+group 'com.mtramin.reject'
+version versions.name
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compileOnly gradleApi()
+    compile libraries.aspectJTools
+    compile libraries.aspectJRuntime
+}
+
+gradlePlugin {
+    plugins {
+        reject {
+            id = "reject"
+            implementationClass = "com.mtramin.reject.plugin.RejectPlugin"
+        }
+    }
+}
+
+//apply from: "publish.gradle"
