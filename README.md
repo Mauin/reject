@@ -7,13 +7,13 @@ _"Sometimes you have something that you don't want called. So you can simply ann
 ## Dependency Rejection
 
 Inspired by a **comedy** talk from Chet Haase and Romain Guy at droidcon London 2017 where they presented
-a "new programming language". The **F**unctional **A**nd **R**eactive **T**uring-complete language
+a "new programming language". The **F**unctional **A**nd **R**eactive **T**uring-complete language.
 
 The language comes with lots of useful features. One of them is dependency rejection. Such a helpful new feature shouldn't be limited to this particular language.
 `reject` ports the dependency rejection functionality and the `@Reject` annotation to Java and Android to make your projects clearer,
 simpler, and more productive.
 
-`Reject` gives you access to the `@Reject` annotation in your Java or Android project. It tells the compiler to reject certain things and it lets you
+`reject` gives you access to the `@Reject` annotation in your Java or Android project. It tells the compiler to reject certain things and it lets you
 know accordingly.
 
 ```
@@ -66,11 +66,11 @@ The compiler will then properly reject those classes/methods by simply saying "N
 
 ### Samples
 
-The samples showcase how to import `Reject` and how to use it in Java and Android projects.
+The samples showcase how to import `reject` and how to use it in Java and Android projects.
 
 #### Java Sample
 
-Run the Java sample with the following command and watch the output in the command line
+Run the Java sample with the following command and watch the output in the command line:
 
 `./gradlew :samples:sample-java:run`
 
